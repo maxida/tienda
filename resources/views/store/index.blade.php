@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="container">
+<div class="container text-center">
     <div id="products">
             @foreach($products as $product)
             <div class="product white-panel">
@@ -10,7 +10,7 @@
                 <img src="{{ $product->image }}" width='50'>
                 <div class="product-info">
                     <p>{{ $product->extract }}</p>
-                    <p>Precio: ${{ number_format($product->price,2) }}</p>
+                    <h3><span class="label label-success">Precio: ${{ number_format($product->price,2) }}</span></h3>
                     <p>
                          <a class="btn btn-warning" href="#"><i class="fa fa-cart-plus">-</i>La quiero</a>
                          <a class="btn btn-primary" href="{{ route('product-detail', $product->slug) }}">
