@@ -58,9 +58,13 @@ html {
 /* Footer-------se pueden crear con herramientas fronend Sass less Stylus*/
 footer 
 {       
-    background: #222;
-    text-align: initial;
-       
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    color: white;
+    text-align: center;
 
 }
 
