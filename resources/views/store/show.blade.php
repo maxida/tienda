@@ -1,7 +1,10 @@
 @extends('store.templeate')
 
 @section('content')
-    <h1>Detalle del Producto</h1> <hr>
+<div class="container"></div>
+    <div class="page-header">
+        <h1>Example page header <small>Sbutext for header</small></h1>
+    </div>
     <div class="product-block">
         <img src="{{ $product->image }}" width="200">
     </div>
