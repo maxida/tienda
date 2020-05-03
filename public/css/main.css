@@ -3,10 +3,12 @@ html {
     position: relative;
   }
   body {
-      background: orange;
-    margin: 0;
-    margin-bottom: 40px;
+        background: orange;
+        margin: 0;
+        margin-bottom: 40px;
+        font-family: 'Roboto Mono', monospace;
   }
+  
 /*Navbar-------*/
 .main-title
 {
@@ -30,7 +32,7 @@ html {
     img {
     width: 120;
     max-width: 200;
-    height: 310px;
+    height: 270px;
     }
     .white-panel 
     {
@@ -107,4 +109,11 @@ ul.redes li a
     border-radius: 1em;
     padding: 1em;
     text-align: center;
+}
+
+/*Slider --------------*/
+.navbar
+{
+    
+    margin-bottom: 0;
 }

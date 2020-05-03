@@ -3,7 +3,7 @@
 @section('content')
 <div class="container text-center"></div>
     <div class="page-header">
-        <h1><i class="fa fa-shopping-cart"></i>-Detalle del producto</h1>
+        <h1><i class="fa fa-shopping-cart "></i>-Detalle del producto</h1>
     </div>
 
     <div class="row">
@@ -21,7 +21,9 @@
                             <span class="btn btn-success">Precio: ${{ number_format($product->price,2) }}</span>
                         </h3>
                         <p> 
-                            <a class="btn btn-warning btn-block" href="#">La quiero</a>
+                            <a class="btn btn-warning btn-block" href="#">
+                                La quiero <i class="fa fa-cart-plus fa-2x"></i>
+                            </a>
                         </p>
                         </div>
                     </div>
@@ -29,7 +31,7 @@
     </div>
 
     
-    
+  <hr>
     <a class="btn btn-primary" href="{{ route('home') }}"><i class="fa fa-chevron-cicle-left"></i>Regresar</a> <hr>
 </div>
 @stop
