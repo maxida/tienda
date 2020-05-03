@@ -1,22 +1,35 @@
 @extends('store.templeate')
 
 @section('content')
-<div class="container"></div>
+<div class="container text-center"></div>
     <div class="page-header">
-        <h1>Example page header <small>Sbutext for header</small></h1>
+        <h1><i class="fa fa-shopping-cart"></i>-Detalle del producto</h1>
     </div>
-    <div class="product-block">
-        <img src="{{ $product->image }}" width="200">
-    </div>
-    <div class="product-block">
-        <h3>{{ $product->name }}</h3> <hr>
-        <div class="product-info">
-            <p>{{ $product->description }}</p>
-            <p>Precio: ${{ number_format($product->price,2) }}</p>
-               <p> 
-                   <a href="#">La quiero</a>
-              </p>
+
+    <div class="row">
+        <div class="col-md-6">
+                <div class="product-block">
+                <img src="{{ $product->image }}">
+                </div>
+        </div>
+        <div class="col-md-6">
+                    <div class="product-block">
+                     <h3>{{ $product->name }}</h3> <hr>
+                         <div class="product-info panel">
+                        <p>{{ $product->description }}</p>
+                        <h3>
+                            <span class="btn btn-success">Precio: ${{ number_format($product->price,2) }}</span>
+                        </h3>
+                        <p> 
+                            <a class="btn btn-warning btn-block" href="#">La quiero</a>
+                        </p>
+                        </div>
+                    </div>
         </div>
     </div>
-    <a href="{{ route('home') }}">Regresar</a> <hr>
+
+    
+    
+    <a class="btn btn-primary" href="{{ route('home') }}"><i class="fa fa-chevron-cicle-left"></i>Regresar</a> <hr>
+</div>
 @stop
