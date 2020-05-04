@@ -1,4 +1,4 @@
-<footer class="container-fluid">
+<footer class="container-fluid fixed-bottom">
     <div class="row">
         <div class="col-md-4">
             <h3>My Laravel</h3>
