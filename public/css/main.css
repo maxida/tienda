@@ -79,11 +79,11 @@ footer
 footer p
 {
     text-align: justify;
-    color: white;
+    color: grey;
 }
 footer h3
 {
-    color: white;
+    color: burlywood;
 }
 
 ul.redes li

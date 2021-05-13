@@ -3,7 +3,7 @@
     <div class="navbar-header">
     <a class="navbar-brand main-title" href="{{ route('home') }}">Puch's</a>
   
-  <p class="navbar-text">My laravel Store</p>
+  <p class="navbar-text">Show Room S.A</p>
     </div>
     
 
